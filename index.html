@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/images/favicon.png" type="image/png"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide to the best Avocado shake in Siem Reap</title>
+    <meta name="description" content="Siem Reap’s best avocado shakes. Get yours today.">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #568203;
+            --secondary: #B8DE6F;
+            --accent: #87A922;
+            --text-dark: #333333;
+            --text-light: #f8f8f8;
+            --frosted-bg: rgba(255, 255, 255, 0.85);
+            --card-bg: rgba(255, 255, 255, 0.95);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, #f8fff0 0%, #e8f5d6 100%);
+            overflow-x: hidden;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            color: var(--accent);
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+        }
+
+        .bold {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Lato font styling */
+        .lato-text {
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        /* Override for Khmer section text */
+        .khmer-section .lato-text,
+        .translation-box .lato-text {
+            font-family: 'Lato', sans-serif;
+            font-size: 20px;
+        }
+
+        /* Remove the rating text from table cells */
+        .stars + br {
+            display: none;
+        }
+
+        .stars {
+            display: inline-block;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: linear-gradient(rgba(86, 130, 3, 0.7), rgba(184, 222, 111, 0.5)), 
+                        url('https://images.unsplash.com/photo-1623428187967-18c8d186fbf6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 20px;
+        }
+
+        .hero-content {
+            background: var(--frosted-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 50px 40px;
+            text-align: center;
+            max-width: 900px;
+            box-shadow: 0 20px 40px rgba(86, 130, 3, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+        }
+
+        .hero h1 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            color: var(--accent);
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 120px;
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: var(--accent);
+            box-shadow: 0 8px 16px rgba(135, 169, 34, 0.2);
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .feature-text {
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 0.95rem;
+            text-align: center;
+        }
+
+        /* Floating animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .feature-icon {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .feature:nth-child(2) .feature-icon {
+            animation-delay: 0.5s;
+        }
+
+        .feature:nth-child(3) .feature-icon {
+            animation-delay: 1s;
+        }
+
+        .feature:nth-child(4) .feature-icon {
+            animation-delay: 1.5s;
+        }
+
+        /* Hero Gap */
+        .hero-gap {
+            height: 40px;
+            background: linear-gradient(to bottom, rgba(184, 222, 111, 0.3), rgba(248, 255, 240, 0.1));
+        }
+
+        @media (max-width: 768px) {
+            .hero-gap {
+                height: 20px;
+            }
+        }
+
+        /* Info Sections */
+        .info-section {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(86, 130, 3, 0.1);
+        }
+
+        /* Khmer Section */
+        .khmer-section {
+            background: linear-gradient(rgba(184, 222, 111, 0.5), rgba(184, 222, 111, 0.5)), 
+                        url('/images/avocado-shake-siem-reap.webp');
+            background-size: cover;
+            background-position: center;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+            position: relative;
+        }
+
+        .khmer-section h2 {
+            background: rgba(255, 255, 255, 0.85);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border-left: 5px solid var(--primary);
+        }
+
+        .khmer-section .flag {
+            font-size: 1.5rem;
+            margin-left: 10px;
+        }
+
+        .translation-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 25px;
+            border-left: 5px solid var(--accent);
+        }
+
+        /* Scoreboard */
+        .scoreboard {
+            overflow-x: auto;
+            margin-top: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 20px;
+            border-bottom: 1px solid rgba(86, 130, 3, 0.1);
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(184, 222, 111, 0.1);
+        }
+
+        tr:hover {
+            background-color: rgba(184, 222, 111, 0.2);
+        }
+
+        .stars {
+            color: #FFC107;
+            font-size: 1.5rem;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .price-tag {
+            background: var(--accent);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 70px;
+            height: 70px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 2.5rem;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            animation: float 2.5s ease-in-out infinite;
+            animation-delay: 0.2s;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-float::after {
+            content: "Chat about avocado shakes!";
+            position: absolute;
+            width: 200px;
+            right: 80px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .whatsapp-float:hover::after {
+            opacity: 1;
+            visibility: visible;
+            right: 85px;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .whatsapp-float.pulse {
+            animation: pulse 2s infinite;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            color: var(--text-light);
+            text-align: center;
+            padding: 60px 20px;
+            margin-top: 60px;
+            border-top: 5px solid var(--primary);
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.4rem;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            font-weight: 600;
+        }
+
+        .heart {
+            color: #ff4757;
+            display: inline-block;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            h1 { font-size: 2.3rem; }
+            h2 { font-size: 1.9rem; }
+            .hero-content { padding: 40px 25px; }
+            .footer-content { font-size: 1.2rem; }
+            .whatsapp-float {
+                width: 60px;
+                height: 60px;
+                font-size: 2rem;
+                bottom: 25px;
+                right: 25px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            section { padding: 40px 15px; }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.7rem; }
+            .info-section, .khmer-section { padding: 25px; }
+            .features { gap: 20px; }
+            .feature { width: 100px; }
+            .feature-icon { width: 60px; height: 60px; font-size: 1.5rem; }
+            th, td { padding: 15px 10px; }
+            .lato-text { font-size: 18px; }
+            .footer-content { font-size: 1.1rem; }
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                font-size: 1.8rem;
+                bottom: 20px;
+                right: 20px;
+            }
+            .whatsapp-float::after {
+                width: 160px;
+                font-size: 0.8rem;
+                padding: 8px 12px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero { min-height: 600px; }
+            h1 { font-size: 1.8rem; }
+            .subtitle { font-size: 1.1rem; }
+            .features { gap: 15px; }
+            .feature { width: 80px; }
+            .feature-icon { width: 50px; height: 50px; font-size: 1.2rem; }
+            .feature-text { font-size: 0.85rem; }
+            .translation-box { padding: 20px; }
+            .lato-text { font-size: 16px; }
+            .footer-content { font-size: 1.0rem; }
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.6rem;
+                bottom: 15px;
+                right: 15px;
+            }
+            .whatsapp-float::after {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/85515720655?text=Hi!%20I%20found%20your%20avocado%20shake%20guide%20and%20I%20have%20questions!" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+        <span>🥑</span>
+    </a>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The Best Avocado 🥑 Shake in Siem Reap Cambodia</h1>
+            <p class="subtitle">Sipping Green: In Search of the Richest, Smoothest Avocado Shake in Cambodia</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-weight"></i>
+                    </div>
+                    <div class="feature-text">Dense</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-ice-cream"></i>
+                    </div>
+                    <div class="feature-text">Creamy</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <div class="feature-text">Full-bodied</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <div class="feature-text">Cooling</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gap between hero and content -->
+    <div class="hero-gap"></div>
+
+    <!-- Info Sections -->
+    <section>
+        <div class="info-section">
+            <h2>What's in an avocado shake?</h2>
+            <p>In Cambodia, street vendors and small restaurants make avocado shakes by blending avocado flesh with ice cubes and condensed milk. Sugar syrup can be added for extra sweetness.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>How do you recognize a good avocado shake?</h2>
+            <p class="lato-text">The ideal avocado shake should be <span class="bold">rich and creamy</span> with a <span class="bold">dense texture</span>. If yours turns out thin or watery, it's probably over-diluted and needs more avocado flesh. Getting this right can be tricky because ripeness matters—the avocado must be <span class="bold">fully ripe</span>, or the shake will have an unpleasant bitter taste.</p>
+        </div>
+    </section>
+
+    <!-- Khmer Section -->
+    <section class="khmer-section">
+        <h2>How to order your avocado shake in Khmer <span class="flag">🇰🇭</span></h2>
+        <p class="lato-text">If you want to impress the seller, you can order your avocado in Khmer. Here's a quick roundup below:</p>
+        
+        <div class="translation-box">
+            <p class="lato-text"><span class="bold">Khmer:</span> ខ្ញុំចូលចិត្តញ៉ាំប័រក្រឡុក។</p>
+            <p class="lato-text"><span class="bold">Phonetic:</span> khñom coul cet ñam bəə kraa-lok.</p>
+            <p class="lato-text"><span class="bold">English:</span> "I like to drink avocado smoothies."</p>
+            
+            <p class="lato-text" style="margin-top: 20px;"><span class="bold">Avocado (ប័រ - bəə):</span> Pronounce this like the "ur" in "burger" or "fur," but keep it short and soft.</p>
+            <p class="lato-text"><span class="bold">To Blend (ក្រឡុក - kraa-lok):</span></p>
+            <p class="lato-text"><span class="bold">kraa:</span> Start with a soft 'k' and 'r' sound, similar to the start of "crane."</p>
+            <p class="lato-text"><span class="bold">lok:</span> Sounds just like "lock."</p>
+            
+            <p class="lato-text"><span class="bold">I like (ខ្ញុំចូលចិត្ត - khñom coul cet):</span></p>
+            <p class="lato-text"><span class="bold">khñom:</span> Sounds like "nyum" (like "yummy") with a soft 'k' at the very beginning.</p>
+            <p class="lato-text"><span class="bold">coul cet:</span> Sounds like "chul jet."</p>
+        </div>
+    </section>
+
+    <!-- Scoreboard Section -->
+    <section>
+        <h2>Our Scoreboard</h2>
+        
+        <div class="scoreboard">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rating</th>
+                        <th>Name</th>
+                        <th>Location</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </td>
+                        <td>Chef Pan</td>
+                        <td>
+                            <div class="map-container">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3881.5197397999514!2d103.85797177321817!3d13.380111805794192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311017280eabf20d%3A0x910a267b905ca075!2zQ2hlZiBQYW4gUmVzdGF1cmFudCAtIOGelOGetuGemeGeguGfhOGeiuGfgeGegA!5e0!3m2!1sen!2skh!4v1768924575439!5m2!1sen!2skh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="price-tag">5000 Riels (USD 1.25)</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </td>
+                        <td>Angkor Shake</td>
+                        <td>
+                            <div class="map-container">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3881.92515667111!2d103.85147637321755!3d13.35492980636197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311017dbdafc9a9b%3A0x99385913fe7db57c!2sAngkor%20Fruit%20Shake!5e0!3m2!1sen!2skh!4v1768924679748!5m2!1sen!2skh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="price-tag">7000 Riels (USD 1.75)</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>For people Hunting for Siem Reap's Ultimate Avocado Shake <span class="heart">💚</span></p>
+        </div>
+    </footer>
+
+    <script>
+        // Add animation to avocado in title on hover
+        document.querySelector('h1').addEventListener('mouseover', function() {
+            const avocado = this.querySelector('span, .avocado-emoji');
+            if (avocado) {
+                avocado.style.transform = 'rotate(20deg) scale(1.2)';
+                setTimeout(() => {
+                    avocado.style.transform = '';
+                }, 300);
+            }
+        });
+
+        // Add interaction to stars
+        document.querySelectorAll('.stars').forEach(stars => {
+            stars.addEventListener('click', function() {
+                this.classList.toggle('highlighted');
+            });
+        });
+
+        // Make feature icons bounce on hover
+        document.querySelectorAll('.feature-icon').forEach(icon => {
+            icon.addEventListener('mouseenter', function() {
+                this.style.animation = 'none';
+                this.style.transform = 'scale(1.2)';
+                setTimeout(() => {
+                    this.style.animation = 'float 3s ease-in-out infinite';
+                    this.style.transform = '';
+                }, 300);
+            });
+        });
+
+        // WhatsApp button interaction
+        const whatsappBtn = document.querySelector('.whatsapp-float');
+        whatsappBtn.addEventListener('mouseenter', function() {
+            this.classList.add('pulse');
+        });
+        
+        whatsappBtn.addEventListener('mouseleave', function() {
+            this.classList.remove('pulse');
+        });
+    </script>
+</body>
+</html>
