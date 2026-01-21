@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guide to the best Avocado shake in Siem Reap</title>
-    <meta name="description" content="Siem Reap’s best avocado shakes. Get yours today.">
-<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <meta name="description" content="Siem Reap's best avocado shakes. Get yours today.">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -318,6 +318,245 @@
             margin-top: 10px;
         }
 
+        /* Avocado Quiz Styles - Added to match your design */
+        .quiz-section {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px auto;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(86, 130, 3, 0.1);
+            max-width: 1200px;
+        }
+
+        .quiz-header {
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 15px 15px 0 0;
+            margin: -40px -40px 25px -40px;
+        }
+
+        .quiz-header h2 {
+            color: white;
+            border-left: none;
+            padding-left: 0;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .quiz-header h2 i {
+            font-size: 1.8rem;
+        }
+
+        .quiz-container {
+            padding: 20px 0;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background-color: rgba(184, 222, 111, 0.3);
+            border-radius: 4px;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: var(--accent);
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        .question-number {
+            font-size: 0.9rem;
+            color: var(--accent);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .question {
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            color: var(--primary);
+            line-height: 1.5;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .option {
+            background-color: rgba(184, 222, 111, 0.1);
+            border: 2px solid rgba(135, 169, 34, 0.3);
+            border-radius: 12px;
+            padding: 18px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .option:hover {
+            background-color: rgba(184, 222, 111, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(135, 169, 34, 0.2);
+        }
+
+        .option.selected {
+            background-color: rgba(135, 169, 34, 0.2);
+            border-color: var(--accent);
+            color: var(--text-dark);
+            font-weight: bold;
+        }
+
+        .option.correct {
+            background-color: rgba(40, 167, 69, 0.2);
+            border-color: #28a745;
+            color: #155724;
+        }
+
+        .option.incorrect {
+            background-color: rgba(220, 53, 69, 0.2);
+            border-color: #dc3545;
+            color: #721c24;
+        }
+
+        .option-letter {
+            background-color: var(--accent);
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .option.selected .option-letter {
+            background-color: var(--primary);
+        }
+
+        .quiz-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .quiz-button {
+            padding: 14px 28px;
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .quiz-button:hover {
+            background-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(86, 130, 3, 0.3);
+        }
+
+        .quiz-button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .results-container {
+            padding: 30px;
+            text-align: center;
+            display: none;
+        }
+
+        .score-circle {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-color: rgba(184, 222, 111, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            border: 10px solid var(--accent);
+        }
+
+        .score-percent {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .score-text {
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
+
+        .results-message {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .results-details {
+            background-color: rgba(184, 222, 111, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .result-item {
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(135, 169, 34, 0.3);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .result-item:last-child {
+            border-bottom: none;
+        }
+
+        .result-question {
+            flex: 1;
+            padding-right: 15px;
+            min-width: 250px;
+        }
+
+        .result-answer {
+            font-weight: bold;
+            color: var(--text-dark);
+            min-width: 200px;
+        }
+
+        .correct-answer {
+            color: #28a745;
+        }
+
+        .incorrect-answer {
+            color: #dc3545;
+        }
+
         /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
@@ -416,6 +655,8 @@
             h1 { font-size: 2.3rem; }
             h2 { font-size: 1.9rem; }
             .hero-content { padding: 40px 25px; }
+            .quiz-section { padding: 30px; }
+            .quiz-header { padding: 20px; margin: -30px -30px 20px -30px; }
             .footer-content { font-size: 1.2rem; }
             .whatsapp-float {
                 width: 60px;
@@ -430,12 +671,15 @@
             section { padding: 40px 15px; }
             h1 { font-size: 2rem; }
             h2 { font-size: 1.7rem; }
-            .info-section, .khmer-section { padding: 25px; }
+            .info-section, .khmer-section, .quiz-section { padding: 25px; }
+            .quiz-header { padding: 15px; margin: -25px -25px 15px -25px; }
             .features { gap: 20px; }
             .feature { width: 100px; }
             .feature-icon { width: 60px; height: 60px; font-size: 1.5rem; }
             th, td { padding: 15px 10px; }
             .lato-text { font-size: 18px; }
+            .result-item { flex-direction: column; gap: 10px; }
+            .result-question, .result-answer { min-width: 100%; }
             .footer-content { font-size: 1.1rem; }
             .whatsapp-float {
                 width: 55px;
@@ -461,6 +705,10 @@
             .feature-text { font-size: 0.85rem; }
             .translation-box { padding: 20px; }
             .lato-text { font-size: 16px; }
+            .quiz-section { padding: 20px; }
+            .quiz-header { padding: 15px; margin: -20px -20px 15px -20px; }
+            .quiz-navigation { flex-direction: column; gap: 15px; }
+            .quiz-button { width: 100%; justify-content: center; }
             .footer-content { font-size: 1.0rem; }
             .whatsapp-float {
                 width: 50px;
@@ -613,6 +861,52 @@
         </div>
     </section>
 
+    <!-- Avocado Quiz Section - Added above the footer -->
+    <section class="quiz-section" id="avocado-quiz">
+        <div class="quiz-header">
+            <h2><i class="fas fa-seedling"></i> Avocado Knowledge Quiz <i class="fas fa-seedling"></i></h2>
+            <p style="margin-top: 10px; opacity: 0.9;">Test your avocado knowledge!</p>
+        </div>
+        
+        <div class="quiz-container" id="quiz-container">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            
+            <div class="question-number" id="question-number">Question 1 of 5</div>
+            <div class="question" id="question"></div>
+            
+            <div class="options" id="options"></div>
+            
+            <div class="quiz-navigation">
+                <button class="quiz-button" id="prev-btn" disabled>
+                    <i class="fas fa-arrow-left"></i> Previous
+                </button>
+                <button class="quiz-button" id="next-btn">
+                    Next <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="quiz-button" id="submit-btn" style="display: none;">
+                    Submit Quiz <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="results-container" id="results-container">
+            <div class="score-circle">
+                <div class="score-percent" id="score-percent">0%</div>
+                <div class="score-text" id="score-text">Score</div>
+            </div>
+            
+            <div class="results-message" id="results-message"></div>
+            
+            <div class="results-details" id="results-details"></div>
+            
+            <button class="quiz-button" id="restart-btn" style="margin-top: 30px;">
+                <i class="fas fa-redo"></i> Try Again
+            </button>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="footer-content">
@@ -621,6 +915,7 @@
     </footer>
 
     <script>
+        // Existing page scripts
         // Add animation to avocado in title on hover
         document.querySelector('h1').addEventListener('mouseover', function() {
             const avocado = this.querySelector('span, .avocado-emoji');
@@ -660,6 +955,225 @@
         whatsappBtn.addEventListener('mouseleave', function() {
             this.classList.remove('pulse');
         });
+
+        // Avocado Quiz Script
+        // Quiz questions and answers
+        const quizData = [
+            {
+                question: "How many species of avocados can be found in Cambodia?",
+                options: ["1", "2", "3"],
+                correct: 2,
+                explanation: "Cambodia is home to 3 different species of avocados, each with unique characteristics."
+            },
+            {
+                question: "Is avocado a fruit or a vegetable?",
+                options: ["Fruit", "Vegetable"],
+                correct: 0,
+                explanation: "Avocado is botanically classified as a fruit, specifically a single-seeded berry."
+            },
+            {
+                question: "In what type of bag you can ripen an avocado faster?",
+                options: ["Plastic", "Paper", "Banana leaf"],
+                correct: 1,
+                explanation: "Placing avocados in a paper bag traps ethylene gas, which speeds up the ripening process."
+            },
+            {
+                question: "Is avocado high in protein?",
+                options: ["Yes", "No"],
+                correct: 1,
+                explanation: "While avocados contain more protein than most fruits, they're not considered a high-protein food compared to legumes or meats."
+            },
+            {
+                question: "How many complete amino acids avocado contains?",
+                options: ["4", "5", "9"],
+                correct: 2,
+                explanation: "Avocados contain all 9 essential amino acids, making them a source of complete protein."
+            }
+        ];
+
+        // DOM elements for quiz
+        const quizContainer = document.getElementById('quiz-container');
+        const resultsContainer = document.getElementById('results-container');
+        const questionNumberEl = document.getElementById('question-number');
+        const questionEl = document.getElementById('question');
+        const optionsEl = document.getElementById('options');
+        const progressEl = document.getElementById('progress');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const submitBtn = document.getElementById('submit-btn');
+        const restartBtn = document.getElementById('restart-btn');
+        const scorePercentEl = document.getElementById('score-percent');
+        const scoreTextEl = document.getElementById('score-text');
+        const resultsMessageEl = document.getElementById('results-message');
+        const resultsDetailsEl = document.getElementById('results-details');
+
+        // Quiz state variables
+        let currentQuestion = 0;
+        let userAnswers = Array(quizData.length).fill(null);
+        let quizCompleted = false;
+
+        // Initialize the quiz
+        function initQuiz() {
+            currentQuestion = 0;
+            userAnswers = Array(quizData.length).fill(null);
+            quizCompleted = false;
+            
+            quizContainer.style.display = 'block';
+            resultsContainer.style.display = 'none';
+            
+            loadQuestion();
+            updateNavigation();
+        }
+
+        // Load the current question
+        function loadQuestion() {
+            const question = quizData[currentQuestion];
+            
+            // Update question number and text
+            questionNumberEl.textContent = `Question ${currentQuestion + 1} of ${quizData.length}`;
+            questionEl.textContent = question.question;
+            
+            // Update progress bar
+            const progressPercent = ((currentQuestion + 1) / quizData.length) * 100;
+            progressEl.style.width = `${progressPercent}%`;
+            
+            // Clear previous options
+            optionsEl.innerHTML = '';
+            
+            // Create option elements
+            question.options.forEach((option, index) => {
+                const optionElement = document.createElement('div');
+                optionElement.className = 'option';
+                
+                if (userAnswers[currentQuestion] === index) {
+                    optionElement.classList.add('selected');
+                }
+                
+                optionElement.innerHTML = `
+                    <div class="option-letter">${String.fromCharCode(65 + index)}</div>
+                    <div class="option-text">${option}</div>
+                `;
+                
+                optionElement.addEventListener('click', () => selectOption(index));
+                optionsEl.appendChild(optionElement);
+            });
+        }
+
+        // Select an option
+        function selectOption(optionIndex) {
+            userAnswers[currentQuestion] = optionIndex;
+            loadQuestion();
+            updateNavigation();
+        }
+
+        // Update navigation buttons state
+        function updateNavigation() {
+            // Previous button
+            prevBtn.disabled = currentQuestion === 0;
+            
+            // Next/Submit button
+            if (currentQuestion === quizData.length - 1) {
+                nextBtn.style.display = 'none';
+                submitBtn.style.display = 'flex';
+                submitBtn.disabled = userAnswers[currentQuestion] === null;
+            } else {
+                nextBtn.style.display = 'flex';
+                submitBtn.style.display = 'none';
+                nextBtn.disabled = userAnswers[currentQuestion] === null;
+            }
+        }
+
+        // Navigate to next question
+        function nextQuestion() {
+            if (currentQuestion < quizData.length - 1) {
+                currentQuestion++;
+                loadQuestion();
+                updateNavigation();
+            }
+        }
+
+        // Navigate to previous question
+        function prevQuestion() {
+            if (currentQuestion > 0) {
+                currentQuestion--;
+                loadQuestion();
+                updateNavigation();
+            }
+        }
+
+        // Submit the quiz and show results
+        function submitQuiz() {
+            quizCompleted = true;
+            
+            // Calculate score
+            let correctCount = 0;
+            quizData.forEach((question, index) => {
+                if (userAnswers[index] === question.correct) {
+                    correctCount++;
+                }
+            });
+            
+            const scorePercent = Math.round((correctCount / quizData.length) * 100);
+            
+            // Display results
+            quizContainer.style.display = 'none';
+            resultsContainer.style.display = 'block';
+            
+            // Update score display
+            scorePercentEl.textContent = `${scorePercent}%`;
+            scoreTextEl.textContent = `${correctCount} out of ${quizData.length} correct`;
+            
+            // Set message based on score
+            let message = "";
+            if (scorePercent >= 80) {
+                message = "Excellent! You're an avocado expert! 🥑";
+            } else if (scorePercent >= 60) {
+                message = "Good job! You know quite a bit about avocados!";
+            } else if (scorePercent >= 40) {
+                message = "Not bad! You know some avocado facts!";
+            } else {
+                message = "Keep learning about avocados - they're amazing!";
+            }
+            
+            resultsMessageEl.textContent = message;
+            
+            // Display detailed results
+            resultsDetailsEl.innerHTML = '<h3>Quiz Review</h3>';
+            quizData.forEach((question, index) => {
+                const userAnswer = userAnswers[index];
+                const isCorrect = userAnswer === question.correct;
+                
+                const resultItem = document.createElement('div');
+                resultItem.className = 'result-item';
+                
+                const userAnswerText = userAnswer !== null ? question.options[userAnswer] : "Not answered";
+                const correctAnswerText = question.options[question.correct];
+                
+                resultItem.innerHTML = `
+                    <div class="result-question">
+                        <strong>Q${index + 1}:</strong> ${question.question}
+                        <div style="margin-top: 8px; font-size: 0.9rem; color: #666;">
+                            ${question.explanation}
+                        </div>
+                    </div>
+                    <div class="result-answer">
+                        <div>Your answer: <span class="${isCorrect ? 'correct-answer' : 'incorrect-answer'}">${userAnswerText}</span></div>
+                        ${!isCorrect ? `<div>Correct: <span class="correct-answer">${correctAnswerText}</span></div>` : ''}
+                    </div>
+                `;
+                
+                resultsDetailsEl.appendChild(resultItem);
+            });
+        }
+
+        // Event listeners for quiz
+        prevBtn.addEventListener('click', prevQuestion);
+        nextBtn.addEventListener('click', nextQuestion);
+        submitBtn.addEventListener('click', submitQuiz);
+        restartBtn.addEventListener('click', initQuiz);
+
+        // Initialize the quiz when page loads
+        document.addEventListener('DOMContentLoaded', initQuiz);
     </script>
 </body>
 </html>
