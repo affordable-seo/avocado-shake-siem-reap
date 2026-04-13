@@ -2,1046 +2,1247 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HR5LGRJXJZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HR5LGRJXJZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HR5LGRJXJZ');
+    </script>
 
-  gtag('config', 'G-HR5LGRJXJZ');
-</script>
     <link rel="canonical" href="https://avocado-shake-siem-reap.vercel.app/">
-    <link rel="icon" href="/images/favicon.png" type="image/png"> 
+    <link rel="icon" href="/images/favicon.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Where is the best avocado shake in Siem Reap? (2026 Guide)</title>
     <meta name="description" content="Siem Reap's best avocado shakes. Get yours today.">
-    
+
     <!-- SEO Meta Tags -->
     <meta name="keywords" content="avocado shake, Siem Reap, Cambodia, best avocado shake, travel guide, food guide, Khmer food, avocado smoothie, Cambodian drinks">
     <meta name="author" content="Avocado Shake Guide">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://avocado-shake-siem-reap.vercel.app/">
     <meta property="og:title" content="Where is the best avocado shake in Siem Reap? (2026 Guide)">
     <meta property="og:description" content="Discover Siem Reap's best avocado shakes. Complete guide with ratings, prices, and locations.">
     <meta property="og:image" content="https://avocado-shake-siem-reap.vercel.app/images/social-preview.jpg">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://avocado-shake-siem-reap.vercel.app/">
     <meta property="twitter:title" content="Where is the best avocado shake in Siem Reap? (2026 Guide)">
     <meta property="twitter:description" content="Discover Siem Reap's best avocado shakes. Complete guide with ratings, prices, and locations.">
     <meta property="twitter:image" content="https://avocado-shake-siem-reap.vercel.app/images/social-preview.jpg">
-    
-    <!-- Preload Resources -->
+
+    <!-- Preconnects -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700&family=Lato:wght@400;700&display=swap" as="style">
-    
-    <!-- Stylesheets -->
+
+    <!-- Fonts: Playfair Display (editorial display) + DM Sans (clean body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        /* ============================================================
+           DESIGN TOKENS
+        ============================================================ */
+        :root {
+            --g900: #1a2e00;
+            --g700: #2e5000;
+            --g600: #3d6b00;
+            --g500: #568203;
+            --g400: #6fa00a;
+            --g300: #87A922;
+            --g200: #b8de6f;
+            --g100: #dff0a8;
+            --g50:  #f2fad8;
+            --g10:  #f8fff0;
+
+            --cream: #fdfbf5;
+            --text:  #1c2a04;
+            --muted: #5a6e3a;
+            --white: #ffffff;
+
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 28px;
+            --radius-xl: 48px;
+
+            --shadow-sm: 0 2px 8px rgba(86,130,3,.10);
+            --shadow-md: 0 8px 28px rgba(86,130,3,.14);
+            --shadow-lg: 0 20px 60px rgba(86,130,3,.18);
+
+            --transition: .3s cubic-bezier(.4,0,.2,1);
         }
 
-        :root {
-            --primary: #568203;
-            --secondary: #B8DE6F;
-            --accent: #87A922;
-            --text-dark: #333333;
-            --text-light: #f8f8f8;
-            --frosted-bg: rgba(255, 255, 255, 0.85);
-            --card-bg: rgba(255, 255, 255, 0.95);
-        }
+        /* ============================================================
+           RESET & BASE
+        ============================================================ */
+        *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+        html { scroll-behavior: smooth; }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-dark);
-            background: linear-gradient(135deg, #f8fff0 0%, #e8f5d6 100%);
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text);
+            background: var(--cream);
             overflow-x: hidden;
+            line-height: 1.7;
         }
 
-        section {
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+        img { max-width:100%; display:block; }
 
+        a { text-decoration: none; color: inherit; }
+
+        /* ============================================================
+           TYPOGRAPHY SCALE (fluid with clamp)
+        ============================================================ */
         h1, h2, h3 {
-            color: var(--primary);
-            margin-bottom: 1rem;
-            font-weight: 700;
+            font-family: 'Playfair Display', Georgia, serif;
+            line-height: 1.15;
+            color: var(--g700);
         }
 
-        h1 {
-            font-size: 2.8rem;
-            line-height: 1.2;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 900; }
+        h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700; }
+        h3 { font-size: clamp(1.15rem, 2vw, 1.5rem); font-weight: 700; }
+
+        p { font-size: clamp(1rem, 1.1vw, 1.15rem); color: var(--muted); margin-bottom: 1.1rem; }
+        p:last-child { margin-bottom: 0; }
+
+        .bold { font-weight: 600; color: var(--g600); }
+
+        /* ============================================================
+           LAYOUT HELPERS
+        ============================================================ */
+        .container {
+            width: min(1200px, 100% - 40px);
+            margin-inline: auto;
         }
 
-        h2 {
-            font-size: 2.2rem;
-            border-left: 5px solid var(--accent);
-            padding-left: 15px;
-            margin-top: 40px;
-            margin-bottom: 25px;
+        .section-gap { padding-block: clamp(56px, 7vw, 96px); }
+
+        /* ============================================================
+           SCROLL REVEAL
+        ============================================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
-        h3 {
-            color: var(--accent);
-            font-size: 1.5rem;
+        /* ============================================================
+           STICKY NAV
+        ============================================================ */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 900;
+            padding: 14px 0;
+            background: transparent;
+            transition: background var(--transition), box-shadow var(--transition);
         }
-
-        p {
-            margin-bottom: 1.2rem;
-            font-size: 1.1rem;
+        .nav.scrolled {
+            background: rgba(253,251,245,.93);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 2px 20px rgba(0,0,0,.07);
         }
-
-        .bold {
-            font-weight: 700;
-            color: var(--primary);
-        }
-
-        /* Lato font styling */
-        .lato-text {
-            font-family: 'Lato', sans-serif;
-            font-size: 20px;
-            line-height: 1.6;
-        }
-
-        /* Override for Khmer section text */
-        .khmer-section .lato-text,
-        .translation-box .lato-text {
-            font-family: 'Lato', sans-serif;
-            font-size: 20px;
-        }
-
-        /* Remove the rating text from table cells */
-        .stars + br {
-            display: none;
-        }
-
-        .stars {
-            display: inline-block;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            min-height: 700px;
+        .nav-inner {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+        }
+        .nav-logo {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-size: 1.25rem;
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: color var(--transition);
+        }
+        .nav.scrolled .nav-logo { color: var(--g600); }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+        .nav-links a {
+            font-size: .9rem;
+            font-weight: 500;
+            color: rgba(255,255,255,.85);
+            transition: color var(--transition);
+        }
+        .nav.scrolled .nav-links a { color: var(--muted); }
+        .nav-links a:hover { color: var(--g200); }
+        .nav.scrolled .nav-links a:hover { color: var(--g500); }
+
+        @media (max-width: 640px) {
+            .nav-links { display: none; }
+        }
+
+        /* ============================================================
+           HERO
+        ============================================================ */
+        .hero {
+            min-height: 100svh;
             position: relative;
-            background: linear-gradient(rgba(86, 130, 3, 0.7), rgba(184, 222, 111, 0.5)), 
-                        url('https://images.unsplash.com/photo-1623428187967-18c8d186fbf6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            padding: 20px;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(160deg, rgba(29,70,0,.75) 0%, rgba(86,130,3,.55) 55%, rgba(184,222,111,.35) 100%),
+                url('https://images.unsplash.com/photo-1623428187967-18c8d186fbf6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')
+                center/cover no-repeat;
+            transform: scale(1.04);
+            transition: transform 8s ease-out;
+        }
+        .hero-bg.loaded { transform: scale(1); }
+
+        /* Noise grain overlay for texture */
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+            pointer-events: none;
         }
 
         .hero-content {
-            background: var(--frosted-bg);
-            backdrop-filter: blur(10px);
-            border-radius: 25px;
-            padding: 50px 40px;
-            text-align: center;
-            max-width: 900px;
-            box-shadow: 0 20px 40px rgba(86, 130, 3, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.3);
             position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 860px;
+            padding: 24px;
+        }
+
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(184,222,111,.18);
+            border: 1px solid rgba(184,222,111,.4);
+            backdrop-filter: blur(8px);
+            color: var(--g100);
+            font-size: .85rem;
+            font-weight: 600;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            padding: 6px 16px;
+            border-radius: 100px;
+            margin-bottom: 24px;
         }
 
         .hero h1 {
-            color: var(--primary);
-            margin-bottom: 15px;
+            color: var(--white);
+            text-shadow: 0 3px 16px rgba(0,0,0,.25);
+            margin-bottom: 18px;
         }
 
-        .subtitle {
-            font-size: 1.4rem;
-            color: var(--accent);
-            margin-bottom: 30px;
-            font-weight: 600;
+        .hero h1 .avocado-emoji {
+            display: inline-block;
+            transition: transform .3s ease;
+        }
+        .hero h1:hover .avocado-emoji {
+            transform: rotate(20deg) scale(1.25);
         }
 
-        .features {
+        .hero-subtitle {
+            font-size: clamp(1rem, 1.5vw, 1.25rem);
+            color: rgba(255,255,255,.82);
+            margin-bottom: 40px;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        /* Feature Pills */
+        .feature-pills {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .feature {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 120px;
-        }
-
-        .feature-icon {
-            width: 70px;
-            height: 70px;
-            background: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
+            gap: 12px;
             justify-content: center;
-            font-size: 1.8rem;
-            color: var(--accent);
-            box-shadow: 0 8px 16px rgba(135, 169, 34, 0.2);
-            margin-bottom: 10px;
-            position: relative;
+            margin-bottom: 44px;
         }
 
-        .feature-text {
-            font-weight: 600;
-            color: var(--primary);
-            font-size: 0.95rem;
-            text-align: center;
-        }
-
-        /* Floating animation */
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
-        }
-
-        .feature-icon {
-            animation: float 3s ease-in-out infinite;
-        }
-
-        .feature:nth-child(2) .feature-icon {
-            animation-delay: 0.5s;
-        }
-
-        .feature:nth-child(3) .feature-icon {
-            animation-delay: 1s;
-        }
-
-        .feature:nth-child(4) .feature-icon {
-            animation-delay: 1.5s;
-        }
-
-        /* Hero Gap */
-        .hero-gap {
-            height: 40px;
-            background: linear-gradient(to bottom, rgba(184, 222, 111, 0.3), rgba(248, 255, 240, 0.1));
-        }
-
-        @media (max-width: 768px) {
-            .hero-gap {
-                height: 20px;
-            }
-        }
-
-        /* Info Sections */
-        .info-section {
-            background: var(--card-bg);
-            border-radius: 20px;
-            padding: 40px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(86, 130, 3, 0.1);
-        }
-
-        /* Khmer Section */
-        .khmer-section {
-            background: linear-gradient(rgba(184, 222, 111, 0.5), rgba(184, 222, 111, 0.5)), 
-                        url('/images/avocado-shake-siem-reap.webp');
-            background-size: cover;
-            background-position: center;
-            padding: 40px;
-            border-radius: 20px;
-            margin: 40px 0;
-            position: relative;
-        }
-
-        .khmer-section h2 {
-            background: rgba(255, 255, 255, 0.85);
-            display: inline-block;
+        .pill {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,.12);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,.22);
+            color: var(--white);
+            font-size: .9rem;
+            font-weight: 500;
             padding: 10px 20px;
-            border-radius: 10px;
-            border-left: 5px solid var(--primary);
+            border-radius: 100px;
+            transition: background var(--transition), transform var(--transition);
         }
-
-        .khmer-section .flag {
-            font-size: 1.5rem;
-            margin-left: 10px;
-        }
-
-        .translation-box {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 25px;
-            border-radius: 15px;
-            margin-top: 25px;
-            border-left: 5px solid var(--accent);
-        }
-
-        /* Scoreboard */
-        .scoreboard {
-            overflow-x: auto;
-            margin-top: 30px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            border-radius: 15px;
-            overflow: hidden;
-        }
-
-        th {
-            background-color: var(--primary);
-            color: white;
-            padding: 20px;
-            text-align: left;
-            font-weight: 600;
-        }
-
-        td {
-            padding: 20px;
-            border-bottom: 1px solid rgba(86, 130, 3, 0.1);
-            vertical-align: top;
-        }
-
-        tr:nth-child(even) {
-            background-color: rgba(184, 222, 111, 0.1);
-        }
-
-        tr:hover {
-            background-color: rgba(184, 222, 111, 0.2);
-        }
-
-        .stars {
-            color: #FFC107;
-            font-size: 1.5rem;
-        }
-
-        .map-container {
-            width: 100%;
-            height: 200px;
-            border-radius: 10px;
-            overflow: hidden;
-            margin-top: 10px;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        .price-tag {
-            background: var(--accent);
-            color: white;
-            padding: 8px 15px;
-            border-radius: 20px;
-            display: inline-block;
-            font-weight: 600;
-            margin-top: 10px;
-        }
-
-        /* Avocado Quiz Styles - Added to match your design */
-        .quiz-section {
-            background: var(--card-bg);
-            border-radius: 20px;
-            padding: 40px;
-            margin: 40px auto;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(86, 130, 3, 0.1);
-            max-width: 1200px;
-        }
-
-        .quiz-header {
-            background: linear-gradient(to right, var(--primary), var(--accent));
-            color: white;
-            padding: 25px;
-            text-align: center;
-            border-radius: 15px 15px 0 0;
-            margin: -40px -40px 25px -40px;
-        }
-
-        .quiz-header h2 {
-            color: white;
-            border-left: none;
-            padding-left: 0;
-            margin-top: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .quiz-header h2 i {
-            font-size: 1.8rem;
-        }
-
-        .quiz-container {
-            padding: 20px 0;
-        }
-
-        .progress-bar {
-            height: 8px;
-            background-color: rgba(184, 222, 111, 0.3);
-            border-radius: 4px;
-            margin-bottom: 25px;
-            overflow: hidden;
-        }
-
-        .progress {
-            height: 100%;
-            background-color: var(--accent);
-            width: 0%;
-            transition: width 0.5s ease;
-        }
-
-        .question-number {
-            font-size: 0.9rem;
-            color: var(--accent);
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .question {
-            font-size: 1.4rem;
-            margin-bottom: 25px;
-            color: var(--primary);
-            line-height: 1.5;
-        }
-
-        .options {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-
-        .option {
-            background-color: rgba(184, 222, 111, 0.1);
-            border: 2px solid rgba(135, 169, 34, 0.3);
-            border-radius: 12px;
-            padding: 18px 20px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 1.1rem;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .option:hover {
-            background-color: rgba(184, 222, 111, 0.2);
+        .pill:hover {
+            background: rgba(255,255,255,.22);
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(135, 169, 34, 0.2);
         }
+        .pill i { color: var(--g200); font-size: .95rem; }
 
-        .option.selected {
-            background-color: rgba(135, 169, 34, 0.2);
-            border-color: var(--accent);
-            color: var(--text-dark);
-            font-weight: bold;
-        }
-
-        .option.correct {
-            background-color: rgba(40, 167, 69, 0.2);
-            border-color: #28a745;
-            color: #155724;
-        }
-
-        .option.incorrect {
-            background-color: rgba(220, 53, 69, 0.2);
-            border-color: #dc3545;
-            color: #721c24;
-        }
-
-        .option-letter {
-            background-color: var(--accent);
-            color: white;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-
-        .option.selected .option-letter {
-            background-color: var(--primary);
-        }
-
-        .quiz-navigation {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .quiz-button {
-            padding: 14px 28px;
-            background-color: var(--accent);
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
+        /* CTA Button */
+        .hero-cta {
+            display: inline-flex;
             align-items: center;
             gap: 10px;
+            background: var(--g500);
+            color: var(--white);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 16px 36px;
+            border-radius: 100px;
+            box-shadow: 0 8px 32px rgba(86,130,3,.45);
+            transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
         }
-
-        .quiz-button:hover {
-            background-color: var(--primary);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(86, 130, 3, 0.3);
+        .hero-cta:hover {
+            background: var(--g600);
+            transform: translateY(-3px);
+            box-shadow: 0 14px 40px rgba(86,130,3,.55);
         }
+        .hero-cta i { transition: transform var(--transition); }
+        .hero-cta:hover i { transform: translateX(4px); }
 
-        .quiz-button:disabled {
-            background-color: #cccccc;
-            cursor: not-allowed;
-            transform: none;
-            box-shadow: none;
-        }
-
-        .results-container {
-            padding: 30px;
-            text-align: center;
-            display: none;
-        }
-
-        .score-circle {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            background-color: rgba(184, 222, 111, 0.2);
+        /* Scroll indicator */
+        .scroll-hint {
+            position: absolute;
+            bottom: 32px;
+            left: 50%;
+            transform: translateX(-50%);
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            margin: 0 auto 30px;
-            border: 10px solid var(--accent);
+            gap: 6px;
+            color: rgba(255,255,255,.5);
+            font-size: .78rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            animation: bounce 2.2s ease-in-out infinite;
+        }
+        .scroll-hint i { font-size: 1rem; }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(8px); }
         }
 
-        .score-percent {
-            font-size: 3rem;
-            font-weight: bold;
-            color: var(--primary);
+        /* ============================================================
+           SECTION HEADER
+        ============================================================ */
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: .78rem;
+            font-weight: 600;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--g400);
+            margin-bottom: 12px;
+        }
+        .section-label::before {
+            content: '';
+            width: 24px;
+            height: 2px;
+            background: var(--g300);
+            border-radius: 2px;
         }
 
-        .score-text {
-            font-size: 1.2rem;
-            color: var(--accent);
+        .section-header { margin-bottom: clamp(32px, 5vw, 56px); }
+        .section-header h2 { margin-bottom: 12px; }
+        .section-header p { max-width: 560px; }
+
+        /* ============================================================
+           INFO CARDS
+        ============================================================ */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+            gap: 24px;
         }
 
-        .results-message {
+        .card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: clamp(24px, 4vw, 40px);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(86,130,3,.08);
+            transition: transform var(--transition), box-shadow var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--g500), var(--g200));
+            border-radius: 0 0 0 0;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .card-icon {
+            width: 52px;
+            height: 52px;
+            background: var(--g50);
+            border-radius: var(--radius-md);
+            display: grid;
+            place-items: center;
             font-size: 1.4rem;
+            color: var(--g500);
             margin-bottom: 20px;
-            color: var(--primary);
         }
 
-        .results-details {
-            background-color: rgba(184, 222, 111, 0.1);
-            border-radius: 15px;
-            padding: 25px;
-            margin-top: 30px;
+        .card h3 { margin-bottom: 12px; }
+
+        /* ============================================================
+           KHMER SECTION
+        ============================================================ */
+        .khmer-wrap {
+            background:
+                linear-gradient(rgba(29,70,0,.72), rgba(29,70,0,.72)),
+                url('/images/avocado-shake-siem-reap.webp') center/cover no-repeat;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            padding: clamp(40px, 6vw, 80px);
+            position: relative;
+        }
+        .khmer-wrap::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 70% 30%, rgba(184,222,111,.15) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .khmer-wrap .section-label { color: var(--g200); }
+        .khmer-wrap .section-label::before { background: var(--g300); }
+        .khmer-wrap h2 { color: var(--white); margin-bottom: 14px; }
+        .khmer-wrap > p { color: rgba(255,255,255,.75); margin-bottom: 36px; }
+
+        .phrase-card {
+            background: rgba(255,255,255,.1);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,.18);
+            border-radius: var(--radius-lg);
+            padding: 28px 32px;
+            margin-bottom: 24px;
+        }
+        .phrase-card p { color: rgba(255,255,255,.88); margin-bottom: .7rem; }
+        .phrase-card p:last-child { margin-bottom: 0; }
+        .phrase-card .phrase-main {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.2rem, 2vw, 1.6rem);
+            font-weight: 700;
+            color: var(--g200);
+            margin-bottom: 8px;
+        }
+
+        .vocab-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 12px;
+            margin-top: 24px;
+        }
+        .vocab-item {
+            background: rgba(255,255,255,.08);
+            border: 1px solid rgba(255,255,255,.12);
+            border-radius: var(--radius-md);
+            padding: 14px 18px;
+        }
+        .vocab-item strong { display: block; color: var(--g200); font-size: .85rem; margin-bottom: 3px; }
+        .vocab-item span { color: rgba(255,255,255,.7); font-size: .9rem; }
+
+        .pro-tip {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            background: rgba(184,222,111,.12);
+            border: 1px solid rgba(184,222,111,.3);
+            border-radius: var(--radius-md);
+            padding: 18px 22px;
+            margin-top: 28px;
+        }
+        .pro-tip i { color: var(--g200); font-size: 1.2rem; margin-top: 2px; flex-shrink: 0; }
+        .pro-tip p { color: rgba(255,255,255,.8); margin: 0; }
+
+        /* ============================================================
+           SCOREBOARD
+        ============================================================ */
+        .scoreboard-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+        .scoreboard-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 10px;
+            min-width: 600px;
+        }
+
+        .scoreboard-table thead th {
+            background: transparent;
+            color: var(--muted);
+            font-size: .8rem;
+            font-weight: 600;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            padding: 0 20px 8px;
             text-align: left;
         }
 
-        .result-item {
-            padding: 15px 0;
-            border-bottom: 1px solid rgba(135, 169, 34, 0.3);
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+        .scoreboard-table tbody tr {
+            background: var(--white);
+            box-shadow: var(--shadow-sm);
+            border-radius: var(--radius-md);
+            transition: transform var(--transition), box-shadow var(--transition);
+        }
+        .scoreboard-table tbody tr:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
         }
 
-        .result-item:last-child {
-            border-bottom: none;
+        .scoreboard-table td {
+            padding: 18px 20px;
+            vertical-align: middle;
+        }
+        .scoreboard-table td:first-child {
+            border-radius: var(--radius-md) 0 0 var(--radius-md);
+        }
+        .scoreboard-table td:last-child {
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
         }
 
-        .result-question {
-            flex: 1;
-            padding-right: 15px;
-            min-width: 250px;
+        .venue-name {
+            font-weight: 600;
+            color: var(--g700);
+            font-size: 1rem;
         }
 
-        .result-answer {
-            font-weight: bold;
-            color: var(--text-dark);
+        .stars { color: #F5A623; font-size: .95rem; display: flex; gap: 2px; align-items: center; }
+
+        .price-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--g50);
+            color: var(--g600);
+            font-weight: 600;
+            font-size: .85rem;
+            padding: 6px 14px;
+            border-radius: 100px;
+            border: 1px solid var(--g100);
+            white-space: nowrap;
+        }
+
+        .map-thumb {
+            width: 100%;
+            height: 130px;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
             min-width: 200px;
         }
+        .map-thumb iframe { width:100%; height:100%; border:none; }
 
-        .correct-answer {
-            color: #28a745;
+        /* Top pick badge */
+        .top-pick {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: linear-gradient(135deg, var(--g500), var(--g300));
+            color: var(--white);
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            padding: 3px 10px;
+            border-radius: 100px;
+            margin-left: 8px;
+            vertical-align: middle;
         }
 
-        .incorrect-answer {
-            color: #dc3545;
+        /* ============================================================
+           QUIZ
+        ============================================================ */
+        .quiz-wrap {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
         }
 
-        /* WhatsApp Floating Button */
-        .whatsapp-float {
-            position: fixed;
-            width: 70px;
-            height: 70px;
-            bottom: 30px;
-            right: 30px;
-            background-color: #25D366;
-            color: white;
-            border-radius: 50%;
+        .quiz-top {
+            background: linear-gradient(135deg, var(--g700) 0%, var(--g500) 60%, var(--g300) 130%);
+            padding: clamp(28px, 5vw, 48px);
             text-align: center;
-            font-size: 2.5rem;
-            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
-            z-index: 1000;
+        }
+        .quiz-top h2 {
+            color: var(--white);
+            margin-bottom: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            animation: float 2.5s ease-in-out infinite;
-            animation-delay: 0.2s;
+            gap: 14px;
+        }
+        .quiz-top p { color: rgba(255,255,255,.75); margin: 0; font-size: .95rem; }
+
+        .quiz-body {
+            padding: clamp(28px, 5vw, 52px);
         }
 
-        .whatsapp-float:hover {
-            background-color: #128C7E;
+        .progress-track {
+            height: 6px;
+            background: var(--g50);
+            border-radius: 100px;
+            margin-bottom: 28px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(to right, var(--g500), var(--g300));
+            border-radius: 100px;
+            transition: width .5s cubic-bezier(.4,0,.2,1);
+        }
+
+        .q-label {
+            font-size: .82rem;
+            font-weight: 600;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--g400);
+            margin-bottom: 8px;
+        }
+
+        .q-text {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            color: var(--g700);
+            margin-bottom: 28px;
+            line-height: 1.4;
+        }
+
+        .options-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .option-btn {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: var(--g10);
+            border: 2px solid transparent;
+            border-radius: var(--radius-md);
+            padding: 16px 20px;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1rem;
+            color: var(--text);
+            transition: all var(--transition);
+            text-align: left;
+            width: 100%;
+        }
+        .option-btn:hover {
+            background: var(--g50);
+            border-color: var(--g200);
+            transform: translateX(4px);
+        }
+        .option-btn.selected {
+            background: var(--g50);
+            border-color: var(--g500);
+            font-weight: 600;
+        }
+        .option-btn.correct {
+            background: rgba(34,197,94,.08);
+            border-color: #22c55e;
+            color: #166534;
+        }
+        .option-btn.incorrect {
+            background: rgba(239,68,68,.06);
+            border-color: #ef4444;
+            color: #991b1b;
+        }
+
+        .opt-letter {
+            width: 34px;
+            height: 34px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            background: var(--white);
+            border: 2px solid var(--g200);
+            display: grid;
+            place-items: center;
+            font-weight: 700;
+            font-size: .88rem;
+            color: var(--g500);
+            transition: all var(--transition);
+        }
+        .option-btn.selected .opt-letter {
+            background: var(--g500);
+            border-color: var(--g500);
+            color: var(--white);
+        }
+        .option-btn.correct .opt-letter {
+            background: #22c55e;
+            border-color: #22c55e;
+            color: var(--white);
+        }
+        .option-btn.incorrect .opt-letter {
+            background: #ef4444;
+            border-color: #ef4444;
+            color: var(--white);
+        }
+
+        .quiz-nav {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .qbtn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 13px 26px;
+            border-radius: 100px;
+            border: none;
+            font-family: 'DM Sans', sans-serif;
+            font-size: .95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition);
+        }
+        .qbtn-primary {
+            background: var(--g500);
+            color: var(--white);
+            box-shadow: 0 4px 16px rgba(86,130,3,.3);
+        }
+        .qbtn-primary:hover:not(:disabled) {
+            background: var(--g600);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(86,130,3,.4);
+        }
+        .qbtn-ghost {
+            background: var(--g50);
+            color: var(--muted);
+        }
+        .qbtn-ghost:hover:not(:disabled) {
+            background: var(--g100);
+            color: var(--g600);
+        }
+        .qbtn:disabled {
+            opacity: .4;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+
+        /* Quiz Results */
+        .results-panel {
+            display: none;
+            text-align: center;
+            padding: clamp(28px, 5vw, 52px);
+        }
+
+        .score-ring {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: conic-gradient(var(--g500) var(--pct, 0%), var(--g50) 0%);
+            display: grid;
+            place-items: center;
+            margin: 0 auto 28px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+        }
+        .score-ring::after {
+            content: '';
+            position: absolute;
+            inset: 14px;
+            background: var(--white);
+            border-radius: 50%;
+        }
+        .score-inner {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .score-pct {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            font-weight: 900;
+            color: var(--g700);
+            line-height: 1;
+        }
+        .score-sub { font-size: .8rem; color: var(--muted); }
+
+        .results-msg {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            color: var(--g700);
+            margin-bottom: 32px;
+        }
+
+        .review-list { text-align: left; }
+
+        .review-item {
+            padding: 18px 0;
+            border-bottom: 1px solid var(--g50);
+        }
+        .review-item:last-child { border-bottom: none; }
+
+        .review-q {
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 6px;
+        }
+
+        .review-exp {
+            font-size: .9rem;
+            color: var(--muted);
+            margin-bottom: 8px;
+        }
+
+        .review-ans { font-size: .9rem; display: flex; gap: 16px; flex-wrap: wrap; }
+        .ans-correct { color: #16a34a; font-weight: 600; }
+        .ans-incorrect { color: #dc2626; font-weight: 600; }
+
+        /* ============================================================
+           WHATSAPP FLOATING BUTTON
+        ============================================================ */
+        .wa-float {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 950;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 1.8rem;
+            box-shadow: 0 6px 24px rgba(37,211,102,.45);
+            transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+            animation: waFloat 3s ease-in-out infinite;
+        }
+        .wa-float:hover {
+            background: #128C7E;
             transform: scale(1.1);
-            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.6);
+            box-shadow: 0 10px 32px rgba(37,211,102,.55);
+            animation: none;
         }
-
-        .whatsapp-float::after {
+        .wa-float::before {
             content: "Chat about avocado shakes!";
             position: absolute;
-            width: 200px;
-            right: 80px;
+            right: calc(100% + 12px);
             top: 50%;
             transform: translateY(-50%);
-            background: var(--primary);
-            color: white;
-            padding: 10px 15px;
-            border-radius: 10px;
-            font-size: 0.9rem;
+            background: var(--g700);
+            color: var(--white);
+            font-family: 'DM Sans', sans-serif;
+            font-size: .82rem;
+            font-weight: 500;
+            padding: 8px 14px;
+            border-radius: var(--radius-sm);
+            white-space: nowrap;
             opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            text-align: center;
-            font-weight: 600;
+            pointer-events: none;
+            transition: opacity var(--transition), transform var(--transition);
+            transform: translateY(-50%) translateX(6px);
         }
-
-        .whatsapp-float:hover::after {
+        .wa-float:hover::before {
             opacity: 1;
-            visibility: visible;
-            right: 85px;
+            transform: translateY(-50%) translateX(0);
         }
 
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
+        @keyframes waFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
         }
 
-        .whatsapp-float.pulse {
-            animation: pulse 2s infinite;
+        @media (max-width: 480px) {
+            .wa-float::before { display: none; }
+            .wa-float { width: 52px; height: 52px; font-size: 1.5rem; bottom: 20px; right: 20px; }
         }
 
-        /* Footer */
+        /* ============================================================
+           FOOTER
+        ============================================================ */
         footer {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-            color: var(--text-light);
+            background: linear-gradient(135deg, var(--g900) 0%, var(--g700) 100%);
+            padding: clamp(48px, 7vw, 80px) 24px;
             text-align: center;
-            padding: 60px 20px;
-            margin-top: 60px;
-            border-top: 5px solid var(--primary);
+            position: relative;
+            overflow: hidden;
+        }
+        footer::before {
+            content: '🥑';
+            position: absolute;
+            font-size: 18rem;
+            opacity: .04;
+            top: -4rem;
+            left: 50%;
+            transform: translateX(-50%);
+            pointer-events: none;
+            user-select: none;
         }
 
-        .footer-content {
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 1.4rem;
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-            font-weight: 600;
+        .footer-inner { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
+
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--g200);
+            margin-bottom: 16px;
+        }
+
+        footer p {
+            color: rgba(255,255,255,.55);
+            font-size: .9rem;
+            margin-bottom: .5rem;
         }
 
         .heart {
             color: #ff4757;
             display: inline-block;
-            animation: heartbeat 1.5s infinite;
+            animation: heartbeat 1.5s ease-in-out infinite;
         }
 
         @keyframes heartbeat {
             0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.2); }
+            50% { transform: scale(1.3); }
         }
 
-        /* Responsive */
-        @media (max-width: 992px) {
-            h1 { font-size: 2.3rem; }
-            h2 { font-size: 1.9rem; }
-            .hero-content { padding: 40px 25px; }
-            .quiz-section { padding: 30px; }
-            .quiz-header { padding: 20px; margin: -30px -30px 20px -30px; }
-            .footer-content { font-size: 1.2rem; }
-            .whatsapp-float {
-                width: 60px;
-                height: 60px;
-                font-size: 2rem;
-                bottom: 25px;
-                right: 25px;
-            }
-        }
-
+        /* ============================================================
+           RESPONSIVE TWEAKS
+        ============================================================ */
         @media (max-width: 768px) {
-            section { padding: 40px 15px; }
-            h1 { font-size: 2rem; }
-            h2 { font-size: 1.7rem; }
-            .info-section, .khmer-section, .quiz-section { padding: 25px; }
-            .quiz-header { padding: 15px; margin: -25px -25px 15px -25px; }
-            .features { gap: 20px; }
-            .feature { width: 100px; }
-            .feature-icon { width: 60px; height: 60px; font-size: 1.5rem; }
-            th, td { padding: 15px 10px; }
-            .lato-text { font-size: 18px; }
-            .result-item { flex-direction: column; gap: 10px; }
-            .result-question, .result-answer { min-width: 100%; }
-            .footer-content { font-size: 1.1rem; }
-            .whatsapp-float {
-                width: 55px;
-                height: 55px;
-                font-size: 1.8rem;
-                bottom: 20px;
-                right: 20px;
-            }
-            .whatsapp-float::after {
-                width: 160px;
-                font-size: 0.8rem;
-                padding: 8px 12px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .hero { min-height: 600px; }
-            h1 { font-size: 1.8rem; }
-            .subtitle { font-size: 1.1rem; }
-            .features { gap: 15px; }
-            .feature { width: 80px; }
-            .feature-icon { width: 50px; height: 50px; font-size: 1.2rem; }
-            .feature-text { font-size: 0.85rem; }
-            .translation-box { padding: 20px; }
-            .lato-text { font-size: 16px; }
-            .quiz-section { padding: 20px; }
-            .quiz-header { padding: 15px; margin: -20px -20px 15px -20px; }
-            .quiz-navigation { flex-direction: column; gap: 15px; }
-            .quiz-button { width: 100%; justify-content: center; }
-            .footer-content { font-size: 1.0rem; }
-            .whatsapp-float {
-                width: 50px;
-                height: 50px;
-                font-size: 1.6rem;
-                bottom: 15px;
-                right: 15px;
-            }
-            .whatsapp-float::after {
-                display: none;
-            }
+            .cards-grid { grid-template-columns: 1fr; }
+            .quiz-nav { flex-direction: column; }
+            .qbtn { width: 100%; justify-content: center; }
+            .scoreboard-table { min-width: 500px; }
+            .map-thumb { height: 110px; }
         }
     </style>
 </head>
 <body>
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/85515720655?text=Hi!%20I%20found%20your%20avocado%20shake%20guide%20and%20I%20have%20questions!" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
-        <span>🥑</span>
-    </a>
 
-    <!-- Hero Section -->
+    <!-- ===================== NAV ===================== -->
+    <nav class="nav" id="nav">
+        <div class="container nav-inner">
+            <span class="nav-logo">🥑 AvoGuide Siem Reap</span>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#khmer">Khmer</a></li>
+                <li><a href="#scoreboard">Scoreboard</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
     <section class="hero">
+        <div class="hero-bg" id="heroBg"></div>
         <div class="hero-content">
-            <h1>The Best Avocado 🥑 Shake in Siem Reap Cambodia</h1>
-            <p class="subtitle">Sipping Green: In Search of the Richest, Smoothest Avocado Shake in Cambodia</p>
-            
-            <div class="features">
-                <div class="feature">
-                    <div class="feature-icon">
-                        <i class="fas fa-weight"></i>
-                    </div>
-                    <div class="feature-text">Dense</div>
+            <div class="hero-eyebrow"><i class="fas fa-map-marker-alt"></i> Siem Reap, Cambodia · 2026</div>
+            <h1>The Best Avocado <span class="avocado-emoji">🥑</span> Shake in Siem Reap Cambodia</h1>
+            <p class="hero-subtitle">Sipping Green: In Search of the Richest, Smoothest Avocado Shake in Cambodia</p>
+
+            <div class="feature-pills">
+                <div class="pill"><i class="fas fa-weight"></i> Dense</div>
+                <div class="pill"><i class="fas fa-ice-cream"></i> Creamy</div>
+                <div class="pill"><i class="fas fa-wine-bottle"></i> Full-bodied</div>
+                <div class="pill"><i class="fas fa-snowflake"></i> Cooling</div>
+            </div>
+
+            <a href="#scoreboard" class="hero-cta">
+                See Our Top Picks <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        <div class="scroll-hint"><i class="fas fa-chevron-down"></i> Scroll</div>
+    </section>
+
+    <!-- ===================== INFO ===================== -->
+    <section class="section-gap" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">The Essentials</div>
+                <h2>Everything you need to know</h2>
+                <p>From what goes in the glass to what sets a great shake apart from a watery disappointment.</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card reveal">
+                    <div class="card-icon"><i class="fas fa-blender"></i></div>
+                    <h3>What's in an avocado shake?</h3>
+                    <p>In Cambodia, street vendors and small restaurants make avocado shakes by blending avocado flesh with crushed ice and condensed milk. Sugar syrup can be added for extra sweetness.</p>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">
-                        <i class="fas fa-ice-cream"></i>
-                    </div>
-                    <div class="feature-text">Creamy</div>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">
-                        <i class="fas fa-wine-bottle"></i>
-                    </div>
-                    <div class="feature-text">Full-bodied</div>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">
-                        <i class="fas fa-snowflake"></i>
-                    </div>
-                    <div class="feature-text">Cooling</div>
+                <div class="card reveal" style="transition-delay:.12s">
+                    <div class="card-icon"><i class="fas fa-star"></i></div>
+                    <h3>How do you recognize a good avocado shake?</h3>
+                    <p>The ideal avocado shake should be <span class="bold">rich and creamy</span> with a <span class="bold">dense texture</span>. If yours turns out thin or watery, it's probably over-diluted and needs more avocado flesh. Getting this right can be tricky because ripeness matters—the avocado must be <span class="bold">fully ripe</span>, or the shake will have an unpleasant bitter taste.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gap between hero and content -->
-    <div class="hero-gap"></div>
+    <!-- ===================== KHMER ===================== -->
+    <section class="section-gap" id="khmer">
+        <div class="container">
+            <div class="khmer-wrap reveal">
+                <div class="section-label">Language Guide</div>
+                <h2>How to order your avocado shake in Khmer <span style="margin-left:6px">🇰🇭</span></h2>
+                <p>If you want to impress the seller, you can order your avocado in Khmer. Here's a quick roundup below:</p>
 
-    <!-- Info Sections -->
-    <section>
-        <div class="info-section">
-            <h2>What's in an avocado shake?</h2>
-            <p>In Cambodia, street vendors and small restaurants make avocado shakes by blending avocado flesh with crushed ice and condensed milk. Sugar syrup can be added for extra sweetness.</p>
-        </div>
+                <div class="phrase-card">
+                    <p class="phrase-main">ខ្ញុំចូលចិត្តញ៉ាំប័រក្រឡុក។</p>
+                    <p><span class="bold" style="color:var(--g200)">Phonetic:</span> Som beu krolok muy.</p>
+                    <p><span class="bold" style="color:var(--g200)">English:</span> "One avocado shake, please"</p>
+                </div>
 
-        <div class="info-section">
-            <h2>How do you recognize a good avocado shake?</h2>
-            <p class="lato-text">The ideal avocado shake should be <span class="bold">rich and creamy</span> with a <span class="bold">dense texture</span>. If yours turns out thin or watery, it's probably over-diluted and needs more avocado flesh. Getting this right can be tricky because ripeness matters—the avocado must be <span class="bold">fully ripe</span>, or the shake will have an unpleasant bitter taste.</p>
+                <div class="vocab-grid">
+                    <div class="vocab-item">
+                        <strong>Avocado (ប័រ - bəə)</strong>
+                        <span>Pronounce like the "ur" in "burger" — short and soft.</span>
+                    </div>
+                    <div class="vocab-item">
+                        <strong>To Blend (ក្រឡុក)</strong>
+                        <span><em>kraa</em> like "crane" + <em>lok</em> like "lock"</span>
+                    </div>
+                    <div class="vocab-item">
+                        <strong>Som</strong>
+                        <span>Please — standard way to start a request.</span>
+                    </div>
+                    <div class="vocab-item">
+                        <strong>Beu</strong>
+                        <span>Avocado — derived from the French <em>beurre</em> (butter).</span>
+                    </div>
+                    <div class="vocab-item">
+                        <strong>Krolok</strong>
+                        <span>Shake / Blended</span>
+                    </div>
+                    <div class="vocab-item">
+                        <strong>Muy</strong>
+                        <span>One</span>
+                    </div>
+                    <div class="vocab-item">
+                        <strong>Sko tek-tek</strong>
+                        <span>A little sugar</span>
+                    </div>
+                    <div class="vocab-item">
+                        <strong>Sko ha-sep</strong>
+                        <span>50% less sugar</span>
+                    </div>
+                </div>
+
+                <div class="pro-tip">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>Want to take your avocado shake to the next level? Ask the vendor to add an egg yolk — it usually only costs an extra 1,500 riels and makes it incredibly rich.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Khmer Section -->
-    <section class="khmer-section">
-        <h2>How to order your avocado shake in Khmer <span class="flag">🇰🇭</span></h2>
-        <p class="lato-text">If you want to impress the seller, you can order your avocado in Khmer. Here's a quick roundup below:</p>
-        
-        <div class="translation-box">
-            <p class="lato-text"><span class="bold">Khmer:</span> ខ្ញុំចូលចិត្តញ៉ាំប័រក្រឡុក។</p>
-            <p class="lato-text"><span class="bold">Phonetic:</span> Som beu krolok muy.</p>
-            <p class="lato-text"><span class="bold">English:</span> "One avocado shake, please"</p>
-            
-            <p class="lato-text" style="margin-top: 20px;"><span class="bold">Avocado (ប័រ - bəə):</span> Pronounce this like the "ur" in "burger" or "fur," but keep it short and soft.</p>
-            <p class="lato-text"><span class="bold">To Blend (ក្រឡុក - kraa-lok):</span></p>
-            <p class="lato-text"><span class="bold">kraa:</span> Start with a soft 'k' and 'r' sound, similar to the start of "crane."</p>
-            <p class="lato-text"><span class="bold">lok:</span> Sounds just like "lock."</p>
-            <p class="lato-text"><span class="bold">Som:</span> Please (Standard way to start a request).</p>
-            <p class="lato-text"><span class="bold">Beu:</span> Avocado (Derived from the French beurre, meaning butter).</p>
-            <p class="lato-text"><span class="bold">Krolok:</span> Shake / Blended </p>
-            <p class="lato-text"><span class="bold">Muy:</span> One.</p>
-            
-A Few Pro-Tips for Your Order:
+    <!-- ===================== SCOREBOARD ===================== -->
+    <section class="section-gap" id="scoreboard">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Our Rankings</div>
+                <h2>Our Scoreboard</h2>
+                <p>Ranked by richness, creaminess, and overall avocado intensity. All prices in Khmer Riels.</p>
+            </div>
 
-            <p class="lato-text"><span class="bold">Sko tek-tek: A little sugar </p>
-            <p class="lato-text"><span class="bold">Sko ha-sep: 50% less sugar </p>
-        
-            
-                       Want to take your avocado shake to the next level? Ask the vendor to add an egg yolk—it usually only costs an extra 1,500 riels and makes it incredibly rich.
-            
-        </div>
-    </section>
-
-    <!-- Scoreboard Section -->
-    <section>
-        <h2>Our Scoreboard</h2>
-        
-        <div class="scoreboard">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Rating</th>
-                        <th>Name</th>
-                        <th>Location</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </td>
-                        <td>Chef Pan</td>
-                        <td>
-                            <div class="map-container">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3881.5197397999514!2d103.85797177321817!3d13.380111805794192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311017280eabf20d%3A0x910a267b905ca075!2zQ2hlZiBQYW4gUmVzdGF1cmFudCAtIOGelOGetuGemeGeguGfhOGeiuGfgeGegA!5e0!3m2!1sen!2skh!4v1768924575439!5m2!1sen!2skh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="price-tag">5000 Riels (USD 1.25)</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+            <div class="scoreboard-wrap reveal">
+                <table class="scoreboard-table">
+                    <thead>
+                        <tr>
+                            <th>Rating</th>
+                            <th>Venue</th>
+                            <th>Location</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
-                        </td>
-                        <td>Duck Egg House</td>
-                        <td>
-                            <div class="map-container">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3881.4938288238623!2d103.85142457984061!3d13.381719654291938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311017002bb09a41%3A0xba7246ff81c9531f!2z4Z6V4Z-S4Z6R4Z-H4Z6W4Z6E4Z6R4Z624Z6F4Z-B4Z6A4Z6B4Z-S4Z6F4Z64IChEdWNrIEVnZyBIb3VzZSk!5e0!3m2!1sen!2skh!4v1769160991928!5m2!1sen!2skh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="price-tag">5000 Riels (USD 1.25)</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
+                            </td>
+                            <td>
+                                <span class="venue-name">Chef Pan</span>
+                                <span class="top-pick"><i class="fas fa-trophy"></i> Top Pick</span>
+                            </td>
+                            <td>
+                                <div class="map-thumb">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3881.5197397999514!2d103.85797177321817!3d13.380111805794192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311017280eabf20d%3A0x910a267b905ca075!2zQ2hlZiBQYW4gUmVzdGF1cmFudCAtIOGelOGetuGemeGeguGfhOGeiuGfgeGegA!5e0!3m2!1sen!2skh!4v1768924575439!5m2!1sen!2skh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
-                        </td>
-                        <td>Fruits shake on Truck (ទឹកក្រឡុកលើរថយន្ត)</td>
-                        <td>
-                            <div class="map-container">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3881.940465752738!2d103.8541080750831!3d13.353977986997688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDIxJzE0LjMiTiAxMDPCsDUxJzI0LjEiRQ!5e0!3m2!1sen!2skh!4v1769326536439!5m2!1sen!2skh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="price-tag">6000 Riels (USD 1.50)</div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
+                            </td>
+                            <td><div class="price-badge"><i class="fas fa-tag"></i> 5,000 Riels (USD 1.25)</div></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
-                        </td>
-                        <td>Angkor Fruit Shake</td>
-                        <td>
-                            <div class="map-container">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3881.92515667111!2d103.85147637321755!3d13.35492980636197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311017dbdafc9a9b%3A0x99385913fe7db57c!2sAngkor%20Fruit%20Shake!5e0!3m2!1sen!2skh!4v1768924679748!5m2!1sen!2skh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="price-tag">7000 Riels (USD 1.75)</div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                            </td>
+                            <td><span class="venue-name">Duck Egg House</span></td>
+                            <td>
+                                <div class="map-thumb">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3881.4938288238623!2d103.85142457984061!3d13.381719654291938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311017002bb09a41%3A0xba7246ff81c9531f!2z4Z6V4Z-S4Z6R4Z-H4Z6W4Z6E4Z6R4Z624Z6F4Z-B4Z6A4Z6B4Z-S4Z6F4Z64IChEdWNrIEVnZyBIb3VzZSk!5e0!3m2!1sen!2skh!4v1769160991928!5m2!1sen!2skh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </td>
+                            <td><div class="price-badge"><i class="fas fa-tag"></i> 5,000 Riels (USD 1.25)</div></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </td>
+                            <td><span class="venue-name">Fruits Shake on Truck <span style="font-weight:400;font-size:.85rem;color:var(--muted)">(ទឹកក្រឡុកលើរថយន្ត)</span></span></td>
+                            <td>
+                                <div class="map-thumb">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3881.940465752738!2d103.8541080750831!3d13.353977986997688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDIxJzE0LjMiTiAxMDPCsDUxJzI0LjEiRQ!5e0!3m2!1sen!2skh!4v1769326536439!5m2!1sen!2skh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </td>
+                            <td><div class="price-badge"><i class="fas fa-tag"></i> 6,000 Riels (USD 1.50)</div></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </div>
+                            </td>
+                            <td><span class="venue-name">Angkor Fruit Shake</span></td>
+                            <td>
+                                <div class="map-thumb">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3881.92515667111!2d103.85147637321755!3d13.35492980636197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311017dbdafc9a9b%3A0x99385913fe7db57c!2sAngkor%20Fruit%20Shake!5e0!3m2!1sen!2skh!4v1768924679748!5m2!1sen!2skh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </td>
+                            <td><div class="price-badge"><i class="fas fa-tag"></i> 7,000 Riels (USD 1.75)</div></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 
-    <!-- Avocado Quiz Section - Added above the footer -->
-    <section class="quiz-section" id="avocado-quiz">
-        <div class="quiz-header">
-            <h2><i class="fas fa-seedling"></i> Avocado Knowledge Quiz <i class="fas fa-seedling"></i></h2>
-            <p style="margin-top: 10px; opacity: 0.9;">Test your avocado knowledge!</p>
-        </div>
-        
-        <div class="quiz-container" id="quiz-container">
-            <div class="progress-bar">
-                <div class="progress" id="progress"></div>
+    <!-- ===================== QUIZ ===================== -->
+    <section class="section-gap" id="quiz">
+        <div class="container">
+            <div class="quiz-wrap reveal">
+                <div class="quiz-top">
+                    <h2><i class="fas fa-seedling"></i> Avocado Knowledge Quiz <i class="fas fa-seedling"></i></h2>
+                    <p>Test your avocado knowledge!</p>
+                </div>
+
+                <div class="quiz-body" id="quiz-container">
+                    <div class="progress-track">
+                        <div class="progress-fill" id="progress" style="width:0%"></div>
+                    </div>
+                    <div class="q-label" id="question-number">Question 1 of 5</div>
+                    <div class="q-text" id="question"></div>
+                    <div class="options-list" id="options"></div>
+                    <div class="quiz-nav">
+                        <button class="qbtn qbtn-ghost" id="prev-btn" disabled>
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </button>
+                        <button class="qbtn qbtn-primary" id="next-btn">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="qbtn qbtn-primary" id="submit-btn" style="display:none">
+                            Submit Quiz <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="results-panel" id="results-container">
+                    <div class="score-ring" id="scoreRing" style="--pct:0%">
+                        <div class="score-inner">
+                            <div class="score-pct" id="score-percent">0%</div>
+                            <div class="score-sub" id="score-text">Score</div>
+                        </div>
+                    </div>
+                    <div class="results-msg" id="results-message"></div>
+                    <div class="review-list" id="results-details"></div>
+                    <button class="qbtn qbtn-primary" id="restart-btn" style="margin-top:28px;margin-inline:auto">
+                        <i class="fas fa-redo"></i> Try Again
+                    </button>
+                </div>
             </div>
-            
-            <div class="question-number" id="question-number">Question 1 of 5</div>
-            <div class="question" id="question"></div>
-            
-            <div class="options" id="options"></div>
-            
-            <div class="quiz-navigation">
-                <button class="quiz-button" id="prev-btn" disabled>
-                    <i class="fas fa-arrow-left"></i> Previous
-                </button>
-                <button class="quiz-button" id="next-btn">
-                    Next <i class="fas fa-arrow-right"></i>
-                </button>
-                <button class="quiz-button" id="submit-btn" style="display: none;">
-                    Submit Quiz <i class="fas fa-paper-plane"></i>
-                </button>
-            </div>
-        </div>
-        
-        <div class="results-container" id="results-container">
-            <div class="score-circle">
-                <div class="score-percent" id="score-percent">0%</div>
-                <div class="score-text" id="score-text">Score</div>
-            </div>
-            
-            <div class="results-message" id="results-message"></div>
-            
-            <div class="results-details" id="results-details"></div>
-            
-            <button class="quiz-button" id="restart-btn" style="margin-top: 30px;">
-                <i class="fas fa-redo"></i> Try Again
-            </button>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ===================== FOOTER ===================== -->
     <footer>
-        <div class="footer-content">
+        <div class="footer-inner">
+            <div class="footer-logo">🥑 AvoGuide Siem Reap</div>
             <p>&copy; 2026 For people Hunting for Siem Reap's Ultimate Avocado Shake <span class="heart">💚</span></p>
         </div>
     </footer>
 
+    <!-- ===================== WHATSAPP ===================== -->
+    <a href="https://wa.me/85515720655?text=Hi!%20I%20found%20your%20avocado%20shake%20guide%20and%20I%20have%20questions!" class="wa-float" target="_blank" title="Chat with us on WhatsApp">🥑</a>
+
+    <!-- ===================== SCRIPTS ===================== -->
     <script>
-        // Existing page scripts
-        // Add animation to avocado in title on hover
-        document.querySelector('h1').addEventListener('mouseover', function() {
-            const avocado = this.querySelector('span, .avocado-emoji');
-            if (avocado) {
-                avocado.style.transform = 'rotate(20deg) scale(1.2)';
-                setTimeout(() => {
-                    avocado.style.transform = '';
-                }, 300);
-            }
+        /* ---- Sticky nav ---- */
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 60);
+        }, { passive: true });
+
+        /* ---- Hero bg ken-burns ---- */
+        window.addEventListener('load', () => {
+            document.getElementById('heroBg').classList.add('loaded');
         });
 
-        // Add interaction to stars
-        document.querySelectorAll('.stars').forEach(stars => {
-            stars.addEventListener('click', function() {
-                this.classList.toggle('highlighted');
+        /* ---- Scroll reveal ---- */
+        const revealEls = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(el => {
+                if (el.isIntersecting) {
+                    el.target.classList.add('visible');
+                    observer.unobserve(el.target);
+                }
             });
-        });
+        }, { threshold: 0.12 });
+        revealEls.forEach(el => observer.observe(el));
 
-        // Make feature icons bounce on hover
-        document.querySelectorAll('.feature-icon').forEach(icon => {
-            icon.addEventListener('mouseenter', function() {
-                this.style.animation = 'none';
-                this.style.transform = 'scale(1.2)';
-                setTimeout(() => {
-                    this.style.animation = 'float 3s ease-in-out infinite';
-                    this.style.transform = '';
-                }, 300);
-            });
-        });
-
-        // WhatsApp button interaction
-        const whatsappBtn = document.querySelector('.whatsapp-float');
-        whatsappBtn.addEventListener('mouseenter', function() {
-            this.classList.add('pulse');
-        });
-        
-        whatsappBtn.addEventListener('mouseleave', function() {
-            this.classList.remove('pulse');
-        });
-
-        // Avocado Quiz Script
-        // Quiz questions and answers
+        /* ---- Quiz ---- */
         const quizData = [
             {
                 question: "How many species of avocados can be found in Cambodia?",
@@ -1056,7 +1257,7 @@ A Few Pro-Tips for Your Order:
                 explanation: "Avocado is botanically classified as a fruit, specifically a single-seeded berry."
             },
             {
-                question: "In what type of bag you can ripen an avocado faster?",
+                question: "In what type of bag can you ripen an avocado faster?",
                 options: ["Plastic", "Paper", "Banana leaf"],
                 correct: 1,
                 explanation: "Placing avocados in a paper bag traps ethylene gas, which speeds up the ripening process."
@@ -1068,200 +1269,105 @@ A Few Pro-Tips for Your Order:
                 explanation: "While avocados contain more protein than most fruits, they're not considered a high-protein food compared to legumes or meats."
             },
             {
-                question: "How many complete amino acids avocado contains?",
+                question: "How many complete amino acids does avocado contain?",
                 options: ["4", "5", "9"],
                 correct: 2,
                 explanation: "Avocados contain all 9 essential amino acids, making them a source of complete protein."
             }
         ];
 
-        // DOM elements for quiz
-        const quizContainer = document.getElementById('quiz-container');
-        const resultsContainer = document.getElementById('results-container');
-        const questionNumberEl = document.getElementById('question-number');
-        const questionEl = document.getElementById('question');
-        const optionsEl = document.getElementById('options');
+        const qContainer = document.getElementById('quiz-container');
+        const rContainer = document.getElementById('results-container');
+        const qNumberEl  = document.getElementById('question-number');
+        const qEl        = document.getElementById('question');
+        const optionsEl  = document.getElementById('options');
         const progressEl = document.getElementById('progress');
-        const prevBtn = document.getElementById('prev-btn');
-        const nextBtn = document.getElementById('next-btn');
-        const submitBtn = document.getElementById('submit-btn');
+        const prevBtn    = document.getElementById('prev-btn');
+        const nextBtn    = document.getElementById('next-btn');
+        const submitBtn  = document.getElementById('submit-btn');
         const restartBtn = document.getElementById('restart-btn');
-        const scorePercentEl = document.getElementById('score-percent');
-        const scoreTextEl = document.getElementById('score-text');
-        const resultsMessageEl = document.getElementById('results-message');
-        const resultsDetailsEl = document.getElementById('results-details');
+        const scorePctEl = document.getElementById('score-percent');
+        const scoreTxtEl = document.getElementById('score-text');
+        const scoreRing  = document.getElementById('scoreRing');
+        const resMsgEl   = document.getElementById('results-message');
+        const resDetEl   = document.getElementById('results-details');
 
-        // Quiz state variables
-        let currentQuestion = 0;
-        let userAnswers = Array(quizData.length).fill(null);
-        let quizCompleted = false;
+        let current = 0;
+        let answers = Array(quizData.length).fill(null);
 
-        // Initialize the quiz
         function initQuiz() {
-            currentQuestion = 0;
-            userAnswers = Array(quizData.length).fill(null);
-            quizCompleted = false;
-            
-            quizContainer.style.display = 'block';
-            resultsContainer.style.display = 'none';
-            
-            loadQuestion();
-            updateNavigation();
+            current = 0;
+            answers  = Array(quizData.length).fill(null);
+            qContainer.style.display = 'block';
+            rContainer.style.display = 'none';
+            loadQ();
+            updateNav();
         }
 
-        // Load the current question
-        function loadQuestion() {
-            const question = quizData[currentQuestion];
-            
-            // Update question number and text
-            questionNumberEl.textContent = `Question ${currentQuestion + 1} of ${quizData.length}`;
-            questionEl.textContent = question.question;
-            
-            // Update progress bar
-            const progressPercent = ((currentQuestion + 1) / quizData.length) * 100;
-            progressEl.style.width = `${progressPercent}%`;
-            
-            // Clear previous options
+        function loadQ() {
+            const q = quizData[current];
+            qNumberEl.textContent = `Question ${current + 1} of ${quizData.length}`;
+            qEl.textContent = q.question;
+            progressEl.style.width = `${((current + 1) / quizData.length) * 100}%`;
             optionsEl.innerHTML = '';
-            
-            // Create option elements
-            question.options.forEach((option, index) => {
-                const optionElement = document.createElement('div');
-                optionElement.className = 'option';
-                
-                if (userAnswers[currentQuestion] === index) {
-                    optionElement.classList.add('selected');
-                }
-                
-                optionElement.innerHTML = `
-                    <div class="option-letter">${String.fromCharCode(65 + index)}</div>
-                    <div class="option-text">${option}</div>
-                `;
-                
-                optionElement.addEventListener('click', () => selectOption(index));
-                optionsEl.appendChild(optionElement);
+
+            q.options.forEach((opt, i) => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn' + (answers[current] === i ? ' selected' : '');
+                btn.innerHTML = `<div class="opt-letter">${String.fromCharCode(65 + i)}</div><div>${opt}</div>`;
+                btn.addEventListener('click', () => { answers[current] = i; loadQ(); updateNav(); });
+                optionsEl.appendChild(btn);
             });
         }
 
-        // Select an option
-        function selectOption(optionIndex) {
-            userAnswers[currentQuestion] = optionIndex;
-            loadQuestion();
-            updateNavigation();
+        function updateNav() {
+            prevBtn.disabled = current === 0;
+            const isLast = current === quizData.length - 1;
+            nextBtn.style.display   = isLast ? 'none'  : 'inline-flex';
+            submitBtn.style.display = isLast ? 'inline-flex' : 'none';
+            nextBtn.disabled   = answers[current] === null;
+            submitBtn.disabled = answers[current] === null;
         }
 
-        // Update navigation buttons state
-        function updateNavigation() {
-            // Previous button
-            prevBtn.disabled = currentQuestion === 0;
-            
-            // Next/Submit button
-            if (currentQuestion === quizData.length - 1) {
-                nextBtn.style.display = 'none';
-                submitBtn.style.display = 'flex';
-                submitBtn.disabled = userAnswers[currentQuestion] === null;
-            } else {
-                nextBtn.style.display = 'flex';
-                submitBtn.style.display = 'none';
-                nextBtn.disabled = userAnswers[currentQuestion] === null;
-            }
-        }
-
-        // Navigate to next question
-        function nextQuestion() {
-            if (currentQuestion < quizData.length - 1) {
-                currentQuestion++;
-                loadQuestion();
-                updateNavigation();
-            }
-        }
-
-        // Navigate to previous question
-        function prevQuestion() {
-            if (currentQuestion > 0) {
-                currentQuestion--;
-                loadQuestion();
-                updateNavigation();
-            }
-        }
-
-        // Submit the quiz and show results
         function submitQuiz() {
-            quizCompleted = true;
-            
-            // Calculate score
-            let correctCount = 0;
-            quizData.forEach((question, index) => {
-                if (userAnswers[index] === question.correct) {
-                    correctCount++;
-                }
-            });
-            
-            const scorePercent = Math.round((correctCount / quizData.length) * 100);
-            
-            // Display results
-            quizContainer.style.display = 'none';
-            resultsContainer.style.display = 'block';
-            
-            // Update score display
-            scorePercentEl.textContent = `${scorePercent}%`;
-            scoreTextEl.textContent = `${correctCount} out of ${quizData.length} correct`;
-            
-            // Set message based on score
-            let message = "";
-            if (scorePercent >= 80) {
-                message = "Excellent! You're an avocado expert! 🥑";
-            } else if (scorePercent >= 60) {
-                message = "Good job! You know quite a bit about avocados!";
-            } else if (scorePercent >= 40) {
-                message = "Not bad! You know some avocado facts!";
-            } else {
-                message = "Keep learning about avocados - they're amazing!";
-            }
-            
-            resultsMessageEl.textContent = message;
-            
-            // Display detailed results
-            resultsDetailsEl.innerHTML = '<h3>Quiz Review</h3>';
-            quizData.forEach((question, index) => {
-                const userAnswer = userAnswers[index];
-                const isCorrect = userAnswer === question.correct;
-                
-                const resultItem = document.createElement('div');
-                resultItem.className = 'result-item';
-                
-                const userAnswerText = userAnswer !== null ? question.options[userAnswer] : "Not answered";
-                const correctAnswerText = question.options[question.correct];
-                
-                resultItem.innerHTML = `
-                    <div class="result-question">
-                        <strong>Q${index + 1}:</strong> ${question.question}
-                        <div style="margin-top: 8px; font-size: 0.9rem; color: #666;">
-                            ${question.explanation}
-                        </div>
-                    </div>
-                    <div class="result-answer">
-                        <div>Your answer: <span class="${isCorrect ? 'correct-answer' : 'incorrect-answer'}">${userAnswerText}</span></div>
-                        ${!isCorrect ? `<div>Correct: <span class="correct-answer">${correctAnswerText}</span></div>` : ''}
-                    </div>
-                `;
-                
-                resultsDetailsEl.appendChild(resultItem);
+            const correct = quizData.filter((q, i) => answers[i] === q.correct).length;
+            const pct = Math.round((correct / quizData.length) * 100);
+
+            qContainer.style.display = 'none';
+            rContainer.style.display = 'block';
+
+            scorePctEl.textContent = `${pct}%`;
+            scoreTxtEl.textContent = `${correct} / ${quizData.length}`;
+            scoreRing.style.setProperty('--pct', `${pct}%`);
+
+            resMsgEl.textContent = pct >= 80 ? "Excellent! You're an avocado expert! 🥑"
+                : pct >= 60 ? "Good job! You know quite a bit about avocados!"
+                : pct >= 40 ? "Not bad! You know some avocado facts!"
+                : "Keep learning about avocados — they're amazing!";
+
+            resDetEl.innerHTML = '<h3 style="margin-bottom:16px">Quiz Review</h3>';
+            quizData.forEach((q, i) => {
+                const userAns = answers[i];
+                const isOk   = userAns === q.correct;
+                const item   = document.createElement('div');
+                item.className = 'review-item';
+                item.innerHTML = `
+                    <div class="review-q">Q${i+1}: ${q.question}</div>
+                    <div class="review-exp">${q.explanation}</div>
+                    <div class="review-ans">
+                        <span>Your answer: <span class="${isOk ? 'ans-correct' : 'ans-incorrect'}">${userAns !== null ? q.options[userAns] : 'Not answered'}</span></span>
+                        ${!isOk ? `<span>Correct: <span class="ans-correct">${q.options[q.correct]}</span></span>` : ''}
+                    </div>`;
+                resDetEl.appendChild(item);
             });
         }
 
-        // Event listeners for quiz
-        prevBtn.addEventListener('click', prevQuestion);
-        nextBtn.addEventListener('click', nextQuestion);
+        prevBtn.addEventListener('click', () => { if (current > 0) { current--; loadQ(); updateNav(); } });
+        nextBtn.addEventListener('click', () => { if (current < quizData.length - 1) { current++; loadQ(); updateNav(); } });
         submitBtn.addEventListener('click', submitQuiz);
         restartBtn.addEventListener('click', initQuiz);
 
-        // Initialize the quiz when page loads
         document.addEventListener('DOMContentLoaded', initQuiz);
     </script>
 </body>
 </html>
-
-
-
-
